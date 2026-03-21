@@ -1,4 +1,4 @@
-# Front-Seller 🚀
+# Front Seller 🚀
 **A high-performance Tech E-commerce specialized in hardware and peripherals.**
 
 Front-Seller is a modern web application designed to bridge the gap between complex inventory management and a seamless user shopping experience. Inspired by real-world import business logic, it features a robust product display and real-time stock interaction.

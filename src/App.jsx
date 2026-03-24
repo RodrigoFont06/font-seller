@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <Header title="Font Seller" />
+      <Header title="Font Seller IA" />
 
     </>
   )

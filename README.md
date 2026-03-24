@@ -1,16 +1,30 @@
-# React + Vite
+# Font Seller 🛒💻
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
 
-Currently, two official plugins are available:
+Font Seller is a Single Page Application (SPA) built exclusively as a portfolio project. It simulates a fully functional eCommerce platform specializing in high-performance PC components and gaming peripherals. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The project demonstrates modern web development practices, featuring a responsive UI, seamless routing, and real-time cloud database integration to manage the inventory of hardware—showcasing components like the Ryzen 7 5800X, RX 9060 XT 16GB, Gigabyte B550 motherboards, and MSI Pro 144hz monitors.
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Modern UI/UX:** Clean, responsive, and dynamic interface built with React JSX and styled efficiently using Tailwind CSS alongside custom CSS (including advanced hover/holographic effects).
+* **Cloud Database:** Integration with Firebase Firestore to handle product catalogs, categories, and real-time stock updates.
+* **Automated CI/CD:** Continuous Deployment pipeline configured via GitHub Actions. Pushes to the `main` branch automatically build and deploy the app to Firebase Hosting.
+* **Lightning Fast:** Powered by Vite for instant server start and highly optimized production builds.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** React (JSX), Tailwind CSS, Vanilla CSS
+* **Build Tool:** Vite
+* **Backend as a Service (BaaS):** Firebase (Firestore Database)
+* **Hosting:** Firebase Hosting
+* **Version Control & CI/CD:** Git, GitHub Actions
+
+## 🌐 Live Demo
+
+ * **Check out the live deployment of the project here:** [Font Seller on Firebase](https://fontseller-6c5fc.web.app/)
+

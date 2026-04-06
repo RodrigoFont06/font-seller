@@ -1,17 +1,22 @@
 import '../assets/header.css';
+import React, {useState} from 'react';
+import LinkComponent from './linkComponent';
+import SearchBar from './searchBar';
 
 interface HeaderProps {
     title: string;
     children?: React.ReactNode;
 }
 
-export default function Header({ title, children, ...props }: HeaderProps) {
+export default function Header({ title, children }: HeaderProps) {
+    
+
     return (
-        <header {...props}>
+        <header>
             <h1>{title}</h1>
             <ul>
-                <li><a href="">Login</a></li>
-                <li><a href="">Register</a></li>
+                <li><LinkComponent href="" clases={"links"}><i className="person bi bi-person-fill"></i></LinkComponent></li>
+                <li><SearchBar /></li>
             </ul>
         </header>
     )

@@ -1,0 +1,17 @@
+@import "./colors.css";
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #0d0d0d3d;
+    backdrop-filter: blur(1px);
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: var(--color-white);
+    gap: 15px;
+    border-radius: 20px;
+    border: 2px solid var(--color-white);
+}
+#SearchBar:focus{
+    outline: none;
+}

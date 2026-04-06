@@ -1,0 +1,68 @@
+[
+  {
+    "id": "cpu-5800x",
+    "name": "AMD Ryzen 7 5800X",
+    "category": "Componentes",
+    "subcategory": "CPUs",
+    "price": 349.99,
+    "description": "Procesador de escritorio desbloqueado de 8 núcleos y 16 hilos. Rendimiento puro para gaming y creación de contenido.",
+    "imageUrl": "/placeholders/ryzen-7-5800x.png",
+    "stock": 12,
+    "features": ["8 Cores", "16 Threads", "4.7 GHz Max Boost"]
+  },
+  {
+    "id": "gpu-9060xt",
+    "name": "Radeon RX 9060 XT 16GB Triple Fan",
+    "category": "Componentes",
+    "subcategory": "GPUs",
+    "price": 499.00,
+    "description": "Tarjeta gráfica de última generación con refrigeración de triple ventilador. Preparada para jugar en 1440p y 4K con máxima fluidez.",
+    "imageUrl": "/placeholders/rx-9060-xt.png",
+    "stock": 5,
+    "features": ["16GB VRAM", "Triple Fan Cooling", "RDNA Architecture"]
+  },
+  {
+    "id": "cooler-deepcool-le360",
+    "name": "DeepCool LE360 V2 Anti-Perdida",
+    "category": "Componentes",
+    "subcategory": "Coolers",
+    "price": 115.50,
+    "description": "Refrigeración líquida (AIO) de 360mm con tecnología anti-fugas. Mantén tus temperaturas bajo control incluso con overclock.",
+    "imageUrl": "/placeholders/deepcool-le360.png",
+    "stock": 8,
+    "features": ["360mm Radiator", "Anti-Leak Tech", "RGB Fans"]
+  },
+  {
+    "id": "ram-kingston-fury",
+    "name": "Kingston Fury RGB 16GB (2x8GB) 3200MHz",
+    "category": "Componentes",
+    "subcategory": "RAM",
+    "price": 65.00,
+    "description": "Kit de memoria RAM DDR4 con iluminación RGB personalizable y latencia ultra baja para exprimir cada FPS.",
+    "imageUrl": "/placeholders/kingston-fury.png",
+    "stock": 25,
+    "features": ["3200MHz", "CL16", "DDR4"]
+  },
+  {
+    "id": "psu-750w-gold",
+    "name": "Fuente de Poder 750W 80 Plus Gold",
+    "category": "Componentes",
+    "subcategory": "Fuentes",
+    "price": 120.00,
+    "description": "Eficiencia energética certificada Gold. Energía limpia y estable para builds de alto rendimiento.",
+    "imageUrl": "/placeholders/psu-750w.png",
+    "stock": 10,
+    "features": ["750 Watts", "80 Plus Gold", "Fully Modular"]
+  },
+  {
+    "id": "monitor-msi-pro",
+    "name": "Monitor MSI Pro 24\" 144Hz IPS",
+    "category": "Periféricos",
+    "subcategory": "Monitores",
+    "price": 210.00,
+    "description": "Monitor para eSports y trabajo con panel IPS, tecnología Eye Care y FreeSync para una imagen sin cortes.",
+    "imageUrl": "/placeholders/msi-pro-144hz.png",
+    "stock": 7,
+    "features": ["144Hz Refresh Rate", "IPS Panel", "FreeSync", "Eye Care"]
+  }
+]

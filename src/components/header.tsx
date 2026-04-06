@@ -1,6 +1,11 @@
 import '../assets/header.css';
 
-export default function Header({ title, children, ...props }) {
+interface HeaderProps {
+    title: string;
+    children?: React.ReactNode;
+}
+
+export default function Header({ title, children, ...props }: HeaderProps) {
     return (
         <header {...props}>
             <h1>{title}</h1>

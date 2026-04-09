@@ -1,14 +1,5 @@
 @import './colors.css';
 
-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
-    padding: 30px;
-    background-color: #0d0d0d69;
-    backdrop-filter: blur(1px);
-}
 h1{
     font-size: 42px;
     color: #FFFFFF;

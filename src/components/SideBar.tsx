@@ -17,7 +17,7 @@ export default function SideBar() {
     }, []);
 
     return (
-        <aside className='bg-black/40 backdrop-blur-[1px] flex justify-center items-baseline h-screen w-1/8 shadow p-4'>
+        <aside className='bg-[#5E778C]/30 backdrop-blur-[1px] flex justify-center items-baseline h-screen w-1/8 shadow p-4'>
             <div>
                 <h2 className='text-white font-bold text-2xl'>Categories</h2>
                 <ul className="">

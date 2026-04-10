@@ -10,7 +10,7 @@ export default function SideBar() {
         const fetchCategories = async () => {
             const categoriesCollection = collection(db, "products");
             const categoriesSnapshot = await getDocs(categoriesCollection);
-            const categoriesList = categoriesSnapshot.docs.map(doc => doc.data().category);
+            const categoriesList = categoriesSnapshot.docs.map(doc => doc.data().products);
             setCategories(categoriesList);
         };
 
@@ -26,9 +26,13 @@ export default function SideBar() {
                         <button className='text-left'>Components</button>
                         <p>{isOpen ? '-' : '+'}</p>
                     </li>
-                    <li className={`text-white/80 text-[15px] ${isOpen ? 'block' : 'hidden'}`}>
-                        Hola
-                    </li>
+                    {
+                        isOpen ? categories.map((category, index) => (
+                            <li key={index} className="text-white/80 text-[15px]">
+                                {category}
+                            </li>
+                        )) : 'Error'
+                    }
                 </ul>
             </div>
             <div>

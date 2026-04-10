@@ -19,11 +19,15 @@ export default function SideBar() {
 
     return (
         <aside className='bg-[#5E778C]/30 backdrop-blur-[1px] flex justify-center items-baseline h-screen w-1/8 shadow p-4'>
-            <div className='flex flex-col gap-4'>
-                <h2 className='text-white font-bold text-2xl'>Categories</h2>
+            <div className='flex flex-col gap-4 w-full'>
+                <h2 className='text-white font-bold text-2xl text-center'>Categories</h2>
                 <ul className="">
-                    <li>
-                        <button className="text-white hover:text-blue-300 w-full text-left" onClick={() => setIsOpen(!isOpen)}>Components {isOpen ? '-' : '+'}</button>
+                    <li className="text-white hover:text-blue-300 w-full flex justify-between" onClick={() => setIsOpen(!isOpen)}>
+                        <button className='text-left'>Components</button>
+                        <p>{isOpen ? '-' : '+'}</p>
+                    </li>
+                    <li className={`text-white/80 text-[15px] ${isOpen ? 'block' : 'hidden'}`}>
+                        Hola
                     </li>
                 </ul>
             </div>

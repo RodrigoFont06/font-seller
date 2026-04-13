@@ -1,21 +1,9 @@
-import { collection, getDocs } from 'firebase/firestore';
-import { db } from '../firebase';
 import { useState, useEffect } from "react";
+
 
 export default function SideBar() {
     const [categories, setCategories] = useState<string[]>([]);
     const [isOpen, setIsOpen] = useState(false);
-
-    useEffect(() => {
-        const fetchCategories = async () => {
-            const categoriesCollection = collection(db, "products");
-            const categoriesSnapshot = await getDocs(categoriesCollection);
-            const categoriesList = categoriesSnapshot.docs.map(doc => doc.data().products);
-            setCategories(categoriesList);
-        };
-
-        fetchCategories();
-    }, []);
 
     return (
         <aside className='bg-[#5E778C]/30 backdrop-blur-[1px] flex justify-center items-baseline h-screen w-1/8 shadow p-4'>
@@ -26,13 +14,6 @@ export default function SideBar() {
                         <button className='text-left'>Components</button>
                         <p>{isOpen ? '-' : '+'}</p>
                     </li>
-                    {
-                        isOpen ? categories.map((category, index) => (
-                            <li key={index} className="text-white/80 text-[15px]">
-                                {category}
-                            </li>
-                        )) : 'Error'
-                    }
                 </ul>
             </div>
             <div>

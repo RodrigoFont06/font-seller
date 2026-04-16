@@ -2,8 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.js'
-import { Provider } from 'react-redux'
-import store from './store.js'
+import { ProductProvider } from './context/ProductContext.tsx'
 
 declare global {
   interface Document {
@@ -13,8 +12,8 @@ declare global {
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Provider store={store}>
+    <ProductProvider>
       <App />
-    </Provider>
+    </ProductProvider>
   </StrictMode>,
 )

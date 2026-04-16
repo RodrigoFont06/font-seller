@@ -1,16 +1,16 @@
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 import { useState, useEffect, createContext, ReactNode } from "react";
-// Crear componente interfaz de Product[]
+import Product from '../types/productType';
 
-interface ProductContext {
+interface ProductContextType {
     products: Product[],
     loading: boolean,
 }
 
-export const AppContext = createContext<ProductContext | undefined>(undefined);
+export const ProductContext = createContext<ProductContextType | undefined>(undefined);
 
-export function ProductContext({ children }: { children: ReactNode }) {
+export function ProductProvider({ children }: { children: ReactNode }) {
     const [products, setProducts] = useState<Product[]>([]);
     const [loading, setLoading] = useState(true);
 
@@ -32,8 +32,8 @@ export function ProductContext({ children }: { children: ReactNode }) {
     }, [])
 
     return (
-        <AppContext.Provider value={{ products, loading }}>
+        <ProductContext.Provider value={{ products, loading }}>
             {children}
-        </AppContext.Provider>
+        </ProductContext.Provider>
     )
 }
